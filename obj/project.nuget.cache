@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "VvkaKMcZ9JY=",
+  "dgSpecHash": "e1P0dedslsU=",
   "success": true,
   "projectFilePath": "D:\\Mobile Solution Development\\SEM_2_Software_quality\\Assignment2\\EcommerceApp\\EcommerceProject\\EcommerceProject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mistr\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\mistr\\.nuget\\packages\\xunit\\2.8.1\\xunit.2.8.1.nupkg.sha512",
+    "C:\\Users\\mistr\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\mistr\\.nuget\\packages\\xunit.analyzers\\1.14.0\\xunit.analyzers.1.14.0.nupkg.sha512",
+    "C:\\Users\\mistr\\.nuget\\packages\\xunit.assert\\2.8.1\\xunit.assert.2.8.1.nupkg.sha512",
+    "C:\\Users\\mistr\\.nuget\\packages\\xunit.core\\2.8.1\\xunit.core.2.8.1.nupkg.sha512",
+    "C:\\Users\\mistr\\.nuget\\packages\\xunit.extensibility.core\\2.8.1\\xunit.extensibility.core.2.8.1.nupkg.sha512",
+    "C:\\Users\\mistr\\.nuget\\packages\\xunit.extensibility.execution\\2.8.1\\xunit.extensibility.execution.2.8.1.nupkg.sha512",
+    "C:\\Users\\mistr\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.1\\xunit.runner.visualstudio.2.8.1.nupkg.sha512"
+  ],
   "logs": []
 }

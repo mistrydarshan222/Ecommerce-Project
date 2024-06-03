@@ -24,5 +24,19 @@ public class Product
         Stock = stock;
     }
 
-    
+    public void IncreaseStock(int amount)
+    {
+        if (amount <= 0)
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount to increase must be greater than zero.");
+        Stock += amount;
+    }
+
+    public void DecreaseStock(int amount)
+    {
+        if (amount <= 0)
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount to decrease must be greater than zero.");
+        if (amount > Stock)
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount to decrease cannot be more than the current stock.");
+        Stock -= amount;
+    }
 }
