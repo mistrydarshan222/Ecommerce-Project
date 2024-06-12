@@ -1,133 +1,204 @@
 using System;
-using Xunit;
+using NUnit.Framework;
 
+[TestFixture]
 public class ProductTests
 {
-    
-    [Fact]
-    public void Pid_Valid_Creation_SetsPid()
+    // Arrange-Act-Assert pattern and meaningful names for each test
+
+    [Test]
+    public void Constructor_ValidPid_SetsPid()
     {
-        var product = new Product(6, "Laptop", 100, 50);
-        int productID = product.ProductID;
-        Assert.Equal(6, productID);
+        // Arrange
+        var productID = 6;
+        var productName = "Laptop";
+        var price = 100;
+        var stock = 50;
+
+        // Act
+        var product = new Product(productID, productName, price, stock);
+
+        // Assert
+        Assert.That(product.ProductID, Is.EqualTo(6));
     }
 
-    [Fact]
-    public void Pid_OutOfRangeLow_Creation_Throws()
+    [Test]
+    public void Constructor_PidOutOfRangeLow_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange, Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => new Product(5, "Laptop", 100, 50));
     }
 
-    [Fact]
-    public void Pid_OutOfRangeHigh_Creation_Throws()
+    [Test]
+    public void Constructor_PidOutOfRangeHigh_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange, Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => new Product(60001, "Laptop", 100, 50));
     }
 
-    
-    [Fact]
-    public void PName_Valid_Creation_SetsPName()
+    [Test]
+    public void Constructor_ValidProductName_SetsProductName()
     {
-        var product = new Product(10, "Smartphone", 500, 100);
-        string productName = product.ProductName;
-        Assert.Equal("Smartphone", productName);
+        // Arrange
+        var productID = 10;
+        var productName = "Smartphone";
+        var price = 500;
+        var stock = 100;
+
+        // Act
+        var product = new Product(productID, productName, price, stock);
+
+        // Assert
+        Assert.That(product.ProductName, Is.EqualTo(productName));
     }
 
-    [Fact]
-    public void PName_Empty_Creation_Throws()
+    [Test]
+    public void Constructor_EmptyProductName_ThrowsArgumentNullException()
     {
+        // Arrange, Act, Assert
         Assert.Throws<ArgumentNullException>(() => new Product(10, "", 500, 100));
     }
 
-    [Fact]
-    public void PName_Null_Creation_Throws()
+    [Test]
+    public void Constructor_NullProductName_ThrowsArgumentNullException()
     {
+        // Arrange, Act, Assert
         Assert.Throws<ArgumentNullException>(() => new Product(10, null, 500, 100));
     }
 
-    
-    [Fact]
-    public void Price_Valid_Creation_SetsPrice()
+    [Test]
+    public void Constructor_ValidPrice_SetsPrice()
     {
-        var product = new Product(10, "Tablet", 300, 75);
-        decimal price = product.Price;
-        Assert.Equal(300, price);
+        // Arrange
+        var productID = 10;
+        var productName = "Tablet";
+        var price = 300;
+        var stock = 75;
+
+        // Act
+        var product = new Product(productID, productName, price, stock);
+
+        // Assert
+        Assert.That(product.Price, Is.EqualTo(price));
     }
 
-    [Fact]
-    public void Price_OutOfRangeLow_Creation_Throws()
+    [Test]
+    public void Constructor_PriceOutOfRangeLow_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange, Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => new Product(10, "Tablet", 5, 75));
     }
 
-    [Fact]
-    public void Price_OutOfRangeHigh_Creation_Throws()
+    [Test]
+    public void Constructor_PriceOutOfRangeHigh_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange, Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => new Product(10, "Tablet", 6001, 75));
     }
 
-    [Fact]
-    public void Stock_Valid_Creation_SetsStock()
+    [Test]
+    public void Constructor_ValidStock_SetsStock()
     {
-        var product = new Product(10, "Monitor", 200, 100);
-        int stock = product.Stock;
-        Assert.Equal(100, stock);
+        // Arrange
+        var productID = 10;
+        var productName = "Monitor";
+        var price = 200;
+        var stock = 100;
+
+        // Act
+        var product = new Product(productID, productName, price, stock);
+
+        // Assert
+        Assert.That(product.Stock, Is.EqualTo(stock));
     }
 
-    [Fact]
-    public void Stock_OutOfRangeLow_Creation_Throws()
+    [Test]
+    public void Constructor_StockOutOfRangeLow_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange, Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => new Product(10, "Monitor", 200, 5));
     }
 
-    [Fact]
-    public void Stock_OutOfRangeHigh_Creation_Throws()
+    [Test]
+    public void Constructor_StockOutOfRangeHigh_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange, Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => new Product(10, "Monitor", 200, 600001));
     }
 
-    [Fact]
-    public void IncStock_Valid_IncreasesStock()
+    [Test]
+    public void IncreaseStock_ValidAmount_IncreasesStock()
     {
+        // Arrange
         var product = new Product(10, "Keyboard", 50, 20);
+
+        // Act
         product.IncreaseStock(10);
-        Assert.Equal(30, product.Stock);
+
+        // Assert
+        Assert.That(product.Stock, Is.EqualTo(30));
     }
 
-    [Fact]
-    public void IncStock_Negative_Throws()
+    [Test]
+    public void IncreaseStock_NegativeAmount_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange
         var product = new Product(10, "Keyboard", 50, 20);
+
+        // Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => product.IncreaseStock(-10));
     }
 
-    [Fact]
-    public void IncStock_Zero_Throws()
+    [Test]
+    public void IncreaseStock_ZeroAmount_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange
         var product = new Product(10, "Keyboard", 50, 20);
+
+        // Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => product.IncreaseStock(0));
     }
 
-    
-    [Fact]
-    public void DecStock_Valid_DecreasesStock()
+    [Test]
+    public void DecreaseStock_ValidAmount_DecreasesStock()
     {
+        // Arrange
         var product = new Product(10, "Mouse", 30, 15);
+
+        // Act
         product.DecreaseStock(5);
-        Assert.Equal(10, product.Stock);
+
+        // Assert
+        Assert.That(product.Stock, Is.EqualTo(10));
     }
 
-    [Fact]
-    public void DecStock_Negative_Throws()
+    [Test]
+    public void DecreaseStock_NegativeAmount_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange
         var product = new Product(10, "Mouse", 30, 15);
+
+        // Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => product.DecreaseStock(-5));
     }
 
-    [Fact]
-    public void DecStock_Zero_Throws()
+    [Test]
+    public void DecreaseStock_ZeroAmount_ThrowsArgumentOutOfRangeException()
     {
+        // Arrange
         var product = new Product(10, "Mouse", 30, 15);
+
+        // Act, Assert
         Assert.Throws<ArgumentOutOfRangeException>(() => product.DecreaseStock(0));
-    }   
+    }
+
+    [Test]
+    public void DecreaseStock_AmountGreaterThanStock_ThrowsArgumentOutOfRangeException()
+    {
+        // Arrange
+        var product = new Product(10, "Mouse", 30, 15);
+
+        // Act, Assert
+        Assert.Throws<ArgumentOutOfRangeException>(() => product.DecreaseStock(20));
+    }
 }

@@ -1,8 +1,5 @@
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\testhost.dll
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\testhost.exe
-D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
-D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\EcommerceProject.exe
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\EcommerceProject.deps.json
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\EcommerceProject.runtimeconfig.json
@@ -17,10 +14,6 @@ D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\E
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\xunit.abstractions.dll
-D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\xunit.assert.dll
-D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\xunit.core.dll
-D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\xunit.execution.dotnet.dll
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -98,3 +91,11 @@ D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\E
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\obj\Debug\net8.0\EcommerceProject.pdb
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\obj\Debug\net8.0\EcommerceProject.genruntimeconfig.cache
 D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\obj\Debug\net8.0\ref\EcommerceProject.dll
+D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\nunit.engine.dll
+D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\nunit.engine.api.dll
+D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\nunit.engine.core.dll
+D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\testcentric.engine.metadata.dll
+D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\nunit.framework.dll
+D:\Mobile Solution Development\SEM_2_Software_quality\Assignment2\EcommerceApp\EcommerceProject\bin\Debug\net8.0\nunit.framework.legacy.dll
